@@ -1,0 +1,133 @@
+       .carousel-item {
+           height: 70vh;
+           background-color: #000;
+           /* 將輪播項目背景設為黑色 */
+       }
+
+       .carousel-item img {
+           width: 100%;
+           height: 100%;
+           object-fit: contain;
+           /* 顯示完整圖片，維持比例，多餘部分留白(黑) */
+       }
+
+       .my-caption {
+
+
+
+
+           padding: 20px;
+
+       }
+
+
+       .my-caption h2 {
+           text-shadow: 2px 2px 4px #000000;
+           /* 加上文字陰影 */
+       }
+
+       /* 以上是大圖片輪播的 */
+
+
+
+
+
+
+       .movie1 img {
+           width: 100%;
+           height: 200px;
+           object-fit: cover;
+           display: block;
+
+
+       }
+
+       .lightbox-overlay {
+           display: none;
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background-color: rgba(0, 0, 0, 0.8);
+
+
+       }
+
+       .lightbox-content {
+           position: absolute;
+           top: 40%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+
+
+
+       }
+
+       .lightbox-image {
+           max-width: 100%;
+           max-height: 100%;
+           width: 100vh;
+           height: 55vh;
+
+       }
+
+       .lightbox-close {
+           position: absolute;
+           top: 0;
+           right: 10px;
+           font-size: 40px;
+           color: white;
+           cursor: pointer;
+       }
+
+       /* 以上是小圖片輪播的 */
+
+       .herf {
+           font-size: 20px;
+
+       }
+
+       .homemovie {
+
+           width: 500px;
+           height: 800px;
+
+           object-fit: cover;
+           object-position: top;
+           transition: all 0.5s;
+       }
+
+       .box {
+           width: 500px;
+           height: 100px;
+           transition: all 0.5s;
+           background-color: white;
+       }
+
+       .bigbox {
+           position: absolute;
+
+       }
+
+
+
+
+       /* 讓 figure 元素成為 figcaption 的定位基準 */
+       #home figure {
+           position: relative;
+           margin: 0;
+           font-size: 50px;
+       }
+
+       /* 將 figcaption 絕對定位在 figure 內部 */
+       #home figcaption {
+           position: absolute;
+           bottom: 0;
+           color: black;
+           /* 文字顏色設為白色 */
+
+           padding: 5px 10px;
+           /* 加上一點內距 */
+
+       }

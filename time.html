@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>時刻表</title>
+    <link rel="stylesheet" href="time樣式.css">
+    <link rel="stylesheet" href="插件.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <!-- 1. 引入 Timepicker Addon 的 CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- header裡的是導覽列 -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- navbar-dark是字體顏色,dark是黑底白字 -->
+            <div class="container-fluid">
+                <img style="width: 50px; height: 50px " src="./myimg/movie.png" alt=""
+                    class="img-fluid  rounded-circle me-3 ms-5 bg-white p-1">
+                <a class="navbar-brand" href="home.html">首頁</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ms-3">
+                            <a class="nav-link active" aria-current="page" href="movie.html">電影查詢</a>
+
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link active" href="time.html">時刻查詢</a>
+
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link active" href="FAQ.html">常見問題</a>
+                        </li>
+
+                    </ul>
+                    <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="date">
+        <div class="container ">
+            <!-- 1. 在 row 加上 align-items-center 讓欄位垂直置中 -->
+            <div class="row align-items-center justify-content-center mt-5">
+                <!-- 2. 將 input 和文字放入一個自動寬度的欄位中 -->
+                <div class="col-auto">
+                    <p class="mb-0">Date: <input type="text" name="datetimepicker" id="datepicker" autocomplete="off">
+                    </p>
+                </div>
+                <!-- 3. 將按鈕放入另一個自動寬度的欄位中 -->
+                <div class="col-auto">
+                    <button id="Send" class="btn btn-primary">送出</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timemovie">
+        <div class="container mt-5">
+            <!-- 復仇者聯盟 -->
+            <div class="row justify-content-center mb-3 movie-schedule-item">
+                <div class="col-12" style="max-width: 800px;">
+                    <div class="card shadow p-3 mb-5 bg-body rounded">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="myimg/avenger.jpg" class="img-fluid rounded-start timemovie" alt="復仇者聯盟">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold fs-4">復仇者聯盟</h5>
+                                    <p class="card-text mb-1">導演：喬斯·溫登</p>
+                                    <p class="card-text mb-1">上映日期：2012-04-25</p>
+                                    <p class="card-text mb-2">簡介：神盾局集結地球最強英雄，對抗企圖統治地球的邪神洛基。</p>
+                                    <p class="card-text">上映時間：
+                                        <span class="badge bg-secondary" data-time="10:30">10:30</span>
+                                        <span class="badge bg-secondary" data-time="14:00">14:00</span>
+                                        <span class="badge bg-secondary" data-time="19:30">19:30</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 驀然回首 -->
+            <div class="row justify-content-center mb-3 movie-schedule-item">
+                <div class="col-12" style="max-width: 800px;">
+                    <div class="card shadow p-3 mb-5 bg-body rounded">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="myimg/驀然回首.jpg" class="img-fluid rounded-start timemovie" alt="驀然回首">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold fs-4">驀然回首</h5>
+                                    <p class="card-text mb-1">導演：押山清高</p>
+                                    <p class="card-text mb-1">上映日期：2024-06-28</p>
+                                    <p class="card-text mb-2">簡介：描繪兩位對漫畫充滿熱情的少女，關於才華、嫉妒與友情的青春故事。</p>
+                                    <p class="card-text">上映時間：
+                                        <span class="badge bg-secondary" data-time="11:00">11:00</span>
+                                        <span class="badge bg-secondary" data-time="13:00">13:00</span>
+                                        <span class="badge bg-secondary" data-time="15:00">15:00</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 鏈鋸人劇場版：蕾潔篇 -->
+            <div class="row justify-content-center mb-3 movie-schedule-item">
+                <div class="col-12" style="max-width: 800px;">
+                    <div class="card shadow p-3 mb-5 bg-body rounded">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="myimg/點巨人.jpg" class="img-fluid rounded-start timemovie" alt="鏈鋸人劇場版：蕾潔篇">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold fs-4">鏈鋸人劇場版：蕾潔篇</h5>
+                                    <p class="card-text mb-1">導演：吉原達矢</p>
+                                    <p class="card-text mb-1">上映日期：待定</p>
+                                    <p class="card-text mb-2">簡介：淀治與神秘少女蕾潔的相遇，展開一段短暫卻刻骨銘心的夏日戀曲。</p>
+                                    <p class="card-text">上映時間：
+                                        <span class="badge bg-secondary" data-time="12:00">12:00</span>
+                                        <span class="badge bg-secondary" data-time="16:00">16:00</span>
+                                        <span class="badge bg-secondary" data-time="20:00">20:00</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 全面啟動 -->
+            <div class="row justify-content-center mb-3 movie-schedule-item">
+                <div class="col-12" style="max-width: 800px;">
+                    <div class="card shadow p-3 mb-5 bg-body rounded">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="myimg/盜夢空間.jpg" class="img-fluid rounded-start timemovie" alt="全面啟動">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold fs-4">全面啟動</h5>
+                                    <p class="card-text mb-1">導演：克里斯多福·諾蘭</p>
+                                    <p class="card-text mb-1">上映日期：2010-07-16</p>
+                                    <p class="card-text mb-2">簡介：一位能潛入他人夢境的盜賊，接到一項任務：將想法植入目標腦中。</p>
+                                    <p class="card-text">上映時間：
+                                        <span class="badge bg-secondary" data-time="13:30">13:30</span>
+                                        <span class="badge bg-secondary" data-time="17:00">17:00</span>
+                                        <span class="badge bg-secondary" data-time="21:00">21:00</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 神鬼奇航：死無對證 -->
+            <div class="row justify-content-center mb-3 movie-schedule-item">
+                <div class="col-12" style="max-width: 800px;">
+                    <div class="card shadow p-3 mb-5 bg-body rounded">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="myimg/神鬼奇航5.jpg" class="img-fluid rounded-start timemovie" alt="神鬼奇航：死無對證">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold fs-4">神鬼奇航：死無對證</h5>
+                                    <p class="card-text mb-1">導演：喬奇姆·羅寧</p>
+                                    <p class="card-text mb-1">上映日期：2017-05-24</p>
+                                    <p class="card-text mb-2">簡介：傑克船長必須找到海神三叉戟，才能對抗從魔鬼三角逃脫的薩拉查船長。</p>
+                                    <p class="card-text">上映時間：
+                                        <span class="badge bg-secondary" data-time="09:45">09:45</span>
+                                        <span class="badge bg-secondary" data-time="12:30">12:30</span>
+                                        <span class="badge bg-secondary" data-time="18:00">18:00</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 牠 -->
+            <div class="row justify-content-center mb-3 movie-schedule-item">
+                <div class="col-12" style="max-width: 800px;">
+                    <div class="card shadow p-3 mb-5 bg-body rounded">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="myimg/他.jpg" class="img-fluid rounded-start timemovie" alt="牠">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold fs-4">牠</h5>
+                                    <p class="card-text mb-1">導演：安迪·馬希提</p>
+                                    <p class="card-text mb-1">上映日期：2017-09-07</p>
+                                    <p class="card-text mb-2">簡介：七名孩子組成魯蛇俱樂部，他們將面對一個化身為小丑的古老邪惡實體。</p>
+                                    <p class="card-text">上映時間：
+                                        <span class="badge bg-secondary" data-time="20:15">20:15</span>
+                                        <span class="badge bg-secondary" data-time="22:50">22:50</span>
+                                        <span class="badge bg-secondary" data-time="01:10">01:10</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 死侍 -->
+            <div class="row justify-content-center mb-3 movie-schedule-item">
+                <div class="col-12" style="max-width: 800px;">
+                    <div class="card shadow p-3 mb-5 bg-body rounded">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="myimg/恃死.jpg" class="img-fluid rounded-start timemovie" alt="死侍">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold fs-4">死侍</h5>
+                                    <p class="card-text mb-1">導演：提姆·米勒</p>
+                                    <p class="card-text mb-1">上映日期：2016-02-09</p>
+                                    <p class="card-text mb-2">簡介：前特種部隊成員變成嘴砲傭兵，在實驗後獲得超強自癒能力並展開復仇。</p>
+                                    <p class="card-text">上映時間：
+                                        <span class="badge bg-secondary" data-time="15:40">15:40</span>
+                                        <span class="badge bg-secondary" data-time="19:00">19:00</span>
+                                        <span class="badge bg-secondary" data-time="21:20">21:20</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 阿甘正傳 -->
+            <div class="row justify-content-center mb-3 movie-schedule-item">
+                <div class="col-12" style="max-width: 800px;">
+                    <div class="card shadow p-3 mb-5 bg-body rounded">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="myimg/阿甘正傳.jpg" class="img-fluid rounded-start timemovie" alt="阿甘正傳">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold fs-4">阿甘正傳</h5>
+                                    <p class="card-text mb-1">導演：勞勃·辛密克斯</p>
+                                    <p class="card-text mb-1">上映日期：1994-10-05</p>
+                                    <p class="card-text mb-2">簡介：智商僅75的阿甘，用他善良純真的天性，跑出了一段橫跨美國現代史的傳奇。</p>
+                                    <p class="card-text">上映時間：
+                                        <span class="badge bg-secondary" data-time="10:00">10:00</span>
+                                        <span class="badge bg-secondary" data-time="14:30">14:30</span>
+                                        <span class="badge bg-secondary" data-time="19:00">19:00</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <!-- 2. 引入 Timepicker Addon 的 JS -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
+    <!-- (可選) 引入中文語系檔，讓按鈕文字變成中文 -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/i18n/jquery-ui-timepicker-zh-TW.js"></script>
+
+    <script>
+        $(function () {
+            // 3. 將 .datepicker() 改為 .datetimepicker()
+            $("#datepicker").datetimepicker({
+                dateFormat: 'yy-mm-dd', // 日期格式
+                timeFormat: 'HH:mm',    // 時間格式
+                showDate: false,        // 只顯示時間選擇器
+                controlType: 'select',  // 使用下拉選單選擇時間，更方便
+                oneLine: true,          // 讓日期和時間顯示在同一行
+                minDate: 0,
+                maxDate: "2D"
+            });
+
+            $("#Send").on("click", function () {
+                var selectedTime = $("#datepicker").val();
+
+                if (!selectedTime) {
+                    // 如果沒有選擇時間，就顯示所有電影
+                    $(".movie-schedule-item").show();
+                    return;
+                }
+
+                // 遍歷每一張電影卡片
+                $(".movie-schedule-item").each(function () {
+                    var card = $(this);
+                    var hasAvailableTime = false; // 標記這張卡片是否有符合的場次
+
+                    // 在卡片內尋找所有有 data-time 屬性的徽章
+                    card.find('.badge[data-time]').each(function () {
+                        var movieTime = $(this).data('time');
+
+                        // 比較電影場次時間是否晚於或等於使用者選擇的時間
+                        if (movieTime >= selectedTime) {
+                            hasAvailableTime = true;
+                            return false; // 找到一個符合的就跳出內層迴圈
+                        }
+                    });
+
+                    // 根據標記決定顯示或隱藏整張卡片
+                    if (hasAvailableTime) {
+                        card.show();
+                    } else {
+                        card.hide();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

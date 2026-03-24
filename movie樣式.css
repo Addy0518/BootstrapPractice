@@ -1,0 +1,19 @@
+.movieimg {
+    height: 500px;
+    object-fit: contain;
+    object-position: top;
+}
+
+.card {
+    height: 700px;
+}
+
+.moviebox {
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+.moviebox:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+
+    <link rel="stylesheet" href="插件.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- 套用animatecss的css,一樣從cdnjs下載  -->
+    <link rel="stylesheet" href="home樣式.css">
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- header裡的是導覽列 -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- navbar-dark是字體顏色,dark是黑底白字 -->
+            <div class="container-fluid">
+                <img style="width: 50px; height: 50px " src="./myimg/movie.png" alt=""
+                    class="img-fluid  rounded-circle me-3 ms-5 bg-white p-1">
+                <a class="navbar-brand" href="home.html">首頁</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ms-3">
+                            <a class="nav-link active" aria-current="page" href="movie.html">電影查詢</a>
+
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link active" href="time.html">時刻查詢</a>
+
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link active" href="FAQ.html">常見問題</a>
+                        </li>
+
+                    </ul>
+                    <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="banner">
+        <div class="container-fluid px-0 ">
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <!-- <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div> -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./myimg/reze.jpg" class="d-block mx-auto " alt="...">
+                                <div class="carousel-caption d-none d-md-block my-caption">
+                                    <h2 class="bennertext">「淀治不會的，我會全部教你」</h2>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./myimg/stars.jpg" class="d-block mx-auto" alt="...">
+                                <div class="carousel-caption d-none d-md-block my-caption">
+                                    <h2>「愛是唯一可以超越時間與空間的事物」</h2>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./myimg/badguys.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block my-caption">
+                                    <h2>「揍善良的人，那是暴力；但是揍壞人，那就是正義」</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 以上是大輪播 -->
+
+        <div class="owl-carousel owl-theme mt-3">
+            <div class="movie1">
+                <a href="myimg/movies1.jpg" class="lightbox ">
+                    <img src="myimg/movies1.jpg" alt="">
+                </a>
+            </div>
+            <div class="movie1">
+                <a href="myimg/movies2.jpg" class="lightbox">
+                    <img src="myimg/movies2.jpg" alt="">
+                </a>
+            </div>
+            <div class="movie1">
+                <a href="myimg/reze.jpg" class="lightbox">
+                    <img src="myimg/reze.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- 以上是小輪播 -->
+
+        <section id="home" class="ticket">
+            <div class="container-fluid mt-5">
+                <div class="row ms-5 p-5 pb-3">
+                    <div class="col-12 col-md-4 bigbox1">
+                        <div>
+                            <figure class="wow animate__animated animate__pulse box4" data-wow-delay="0.3s">
+                                <a href="time.html">
+                                    <img src="myimg/TheDarkKnightRises_Poster-1.jpg" alt=""
+                                        class="img-fluid homemovie ">
+                                </a>
+                                <figcaption class="box fw-bolder text-white">查詢時刻</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 bigbox2">
+                        <div>
+                            <figure class="wow animate__animated animate__pulse box5" data-wow-delay="0.6s">
+                                <a href="movie.html">
+                                    <img src="myimg/鬼滅_m.jpg" alt="" class="img-fluid homemovie">
+                                </a>
+                                <figcaption class="box1 fw-bolder text-white">電影查詢</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 bigbox3">
+                        <div>
+                            <figure class="wow animate__animated animate__pulse box6" data-wow-delay="0.9s">
+                                <a href="FAQ.html">
+                                    <img src="myimg/qaPPo8qXrNik1p2apQ.jpg" alt="" class="img-fluid homemovie">
+                                </a>
+                                <figcaption class="box2 fw-bolder text-white">常見問題</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+    </section>
+
+
+
+    <footer class="pt-2 pb-2 mx-auto mt-5">
+        <div class="container-fluid ">
+            <div class="row bg-dark text-white p-4 ">
+                <div class="col-4 col-md-4 text-center">
+                    <a href="" class="text-white herf">關於我們</a>
+                </div>
+                <div class="col-4 col-md-4 text-center">
+                    <a href="" class="text-white herf">聯絡我們</a>
+                </div>
+                <div class="col-4 col-md-4 text-center">
+                    <a href="" class="text-white herf">常見問題</a>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="lightbox-overlay" style="display: none;">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img src="" class="lightbox-image" alt="lightbox image">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- js核心元件 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <!-- 倫播效果 -->
+
+
+
+
+
+
+
+    <script>
+
+        $(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                // 啟用無限輪播，滑到最後一張後會自動回到第一張，形成循環
+                margin: 10,
+                nav: false,
+                // 顯示左右切換箭頭（上一張／下一張）
+                video: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    // 當螢幕寬度 ≥ 0px 時，顯示 1 個項目
+                    600: {
+                        items: 3
+                    },
+                    // 當螢幕寬度 ≥ 600px 時，顯示 3 個項目
+                    1000: {
+                        items: 5
+                    }
+                    // 當螢幕寬度 ≥ 1000px 時，顯示 5 個項目
+
+                }
+            })
+
+
+
+            // 滑鼠移進圖片連結時，顯示燈箱
+            $(".lightbox").on("click", function (e) {
+                e.preventDefault(); // 阻止預設跳轉
+                const imgSrc = $(this).attr("href");
+                $(".lightbox-image").attr("src", imgSrc);
+                $(".lightbox-overlay").fadeIn();
+            });
+
+            // 點擊 overlay 背景時關閉燈箱（不包含圖片）
+            $(".lightbox-overlay").on("click", function (e) {
+                if (!$(e.target).is(".lightbox-image")) {
+                    $(this).fadeOut();
+                }
+            });
+
+            // 點擊關閉按鈕也能關閉
+            $(".lightbox-close").on("click", function () {
+                $(".lightbox-overlay").fadeOut();
+            });
+
+            // 滑動滾輪也能關閉
+            $(window).on("scroll", function () {
+
+                $(".lightbox-overlay").fadeOut();
+
+
+            });
+
+
+
+            // 防止點擊圖片時關閉燈箱
+            $(".lightbox-image").on("click", function (e) {
+                e.stopPropagation();
+            });
+
+            //首頁圖片動畫
+            $(".box4, .box5, .box6").on("mouseenter", function () {
+                // $(this) 是指當前滑鼠移入的 .box4, .box5 或 .box6
+                $(this).find('.box, .box1, .box2').css({
+                    "height": "400px",
+                    "background-color": "#484891"
+                    // .find('.box, .box1, .box2') 是去尋找它內部的 figcaption
+                });
+            }).on("mouseleave", function () {
+                $(this).find('.box, .box1, .box2').css({
+                    "height": "100px",
+                    "background-color": "#22006B"
+                })
+            })
+
+
+            $(".bigbox1, .bigbox2, .bigbox3").on("mouseenter", function () {
+                // $(this) 是指當前滑鼠移入的 .bigbox
+                $(this).css({
+                    "transform": "scale(1.05)"
+                    // .find('.box, .box1, .box2') 是去尋找它內部的 figcaption
+                });
+            }).on("mouseleave", function () {
+                $(this).css({
+                    "transform": "scale(1)"
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

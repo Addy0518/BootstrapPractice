@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="插件.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- header裡的是導覽列 -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- navbar-dark是字體顏色,dark是黑底白字 -->
+            <div class="container-fluid">
+                <img style="width: 50px; height: 50px " src="./myimg/movie.png" alt=""
+                    class="img-fluid  rounded-circle me-3 ms-5 bg-white p-1">
+                <a class="navbar-brand" href="home.html">首頁</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ms-3">
+                            <a class="nav-link active" aria-current="page" href="movie.html">電影查詢</a>
+
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link active" href="time.html">時刻查詢</a>
+
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link active" href="FAQ.html">常見問題</a>
+                        </li>
+
+                    </ul>
+                    <!-- <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 手風琴(accordion)列表 -->
+    <section id="FAQ" class="container">
+        <div class="row">
+            <h2 class="text-center py-5">常見問題</h2>
+            <div class="col-12 col-md-12 mx-auto mt-2">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Q1: 如何購買電影票？
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>您好！</strong>
+                                您可以透過我們的官方網站或手機APP線上訂票，選擇您想看的電影、場次與座位後，使用信用卡或行動支付完成付款。您也可以親臨影城售票處現場購票。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Q2: 如果我買錯票或臨時有事，可以退票或換票嗎？
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                根據我們的規定，電影開演前30分鐘以上，您可以在線上「我的票夾」或親至現場售票處辦理退票，但會酌收部分手續費。換票服務僅限於現場辦理，且需更換為同價位或補差價的場次。詳細退換票規定請參考網站公告。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Q3: 影城可以帶外食嗎？
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                為維護影廳內環境衛生及觀影品質，我們謝絕攜帶味道濃郁、嗆辣或發出聲響的食物入場。影城內販賣部提供多樣化的點心與飲品供您選擇。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Q4: 3D電影的眼鏡需要另外購買嗎？
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                是的，為了個人衛生考量，觀賞3D電影需自備或於現場購買專用3D眼鏡。如果您已經有我們的3D眼鏡，可以重複使用，為環保盡一份心力。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Q5: 電影票有兒童或學生優惠嗎？
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                我們提供多種票價優惠。學生票需在購票及入場時出示有效的學生證；兒童票適用於12歲以下的孩童。此外，我們也提供早場優惠、敬老票等，詳細資訊請洽詢售票櫃檯或查閱官網票價說明。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Q6: 如果電影播放時遇到技術問題怎麼辦？
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                若在觀影過程中遇到任何畫面、聲音異常或設備問題，請立即向現場工作人員反應。我們會盡快派員處理，若問題無法在短時間內解決而影響到您的觀影體驗，我們將會提供相應的補償方案。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Q7: 影城有提供停車位嗎？停車如何收費？
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                我們設有特約停車場。憑當日電影票根可享停車優惠，通常為3小時免費停車，超過部分需依停車場公告收費。詳細的優惠辦法與停車場位置，請參考我們網站上的「交通資訊」頁面。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css");
+/* 這是bootstrap的Css,在bootstrap的繁體中文首頁的簡介就有了  */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
+/* < !-- 貼sdnjs裡的連結(這是icon差件, 可以使用font awsome的icon) --> */
+
+
+
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css");
+/* 外掛網站名稱:https: //owlcarousel2.github.io/OwlCarousel2/demos/basic.html */
+/* 他的css跟js一樣去cdnjs找就好,找尾端min的(min代表打包好了不會動到原作者的原始碼)  */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/themes/eggplant/jquery-ui.min.css");
+@import url("https: //cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/themes/eggplant/theme.min.css");
+/* < !-- 這是在jquery的cdnjs下載的直接查jqueryUI就有了 -->
+< !-- 注意 !當要用jqueryui的css時,記得要套連結尾端為jquery-ui跟theme的兩個,這是一組的 -->< !-- 者三個(還有jsUI)裝完之後,去網站的demo找他們的程式碼,
+我是用月曆所以他在Widget裡面的datepicker(日期選擇器) -->
+< !-- <p>Date: <input type="text" id="datepicker"></p>我抓了這一行放在html,作用是命名 -->
+< !-- $("#datepicker").datepicker();在抓這個方法,就完成了 ! */
